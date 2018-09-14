@@ -67,6 +67,7 @@ Replicate this project:
     cd GroceryNet
 
 download caffemodel into this folder
+
     make run
     
     

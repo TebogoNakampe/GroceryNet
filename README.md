@@ -22,4 +22,13 @@ highly parallel programmable compute with workload-specific hardware acceleratio
 these components on a common intelligent memory fabric, Movidius achieves a unique balance of
 power efficiency and high performance for GroceryNet.
 
+A trend of classification accuracy in testing validation dataset indicates that Grocery-CaffeNet introduces fast convergence even with just an epoch due to derivation of parameters from CaffeNet. In the meantime, we can ensure potential of over-fitting issue by monitoring a trend of trian loss penalty. From our experiments, 45,000 iterations are probed to test the extent of available classification in the current setting. Our model may identify 21 grocery item classes in 76.2% accuracy<sup id='rfn1'>[1](#fn1)</sup>.
+
+| name                   | caffemodel                                                                                               | license      | sha1                                     |
+|:----------------------:|:--------------------------------------------------------------------------------------------------------:|:------------:|:----------------------------------------:|
+| Grocery-CaffeNet model | [caffenet\_train\_iter\_45000.caffemodel](https://drive.google.com/open?id=0B0lt6MbaK2RCZWd0ZklTMmVGbjg) | unrestricted | e43cb843634aae054a2a5bbb813967e0c63b5048 |
+
+Result
+------------
+Let's analyze the top-1 classification accuracy in more detail. To understand what happend to test validation dataset, we deploy Grocery-CaffeNet on [classification script](script/classify.py) per image. For your information, please refer to the following [log](result/classification.log)
 

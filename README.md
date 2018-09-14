@@ -57,10 +57,11 @@ down potential changes to the network to improve the total inference time.
 </p>
 
 Requirements: 
+
     1 Intel Movidius NCS
     Intel Movidius SDK
     Movidius Appzoo
-
+  
 Replicate this project:
 
     cd workspace

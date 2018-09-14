@@ -1,6 +1,10 @@
 # GroceryNet
 GROCERYNET AT THE EDGE
 
+<p align="center">
+  <img width="460" height="300" src="https://github.com/TebogoNakampe/GroceryNet/blob/master/grocerynet.png">
+</p>
+
 Introduction
 According to World Health Organization, “Africa’s health depends on improved nutrition
 a profound shift from communicable to noncommunicable diseases (NCDs) is under way in many parts
@@ -29,4 +33,42 @@ A trend of classification accuracy in testing validation dataset indicates that 
 | name                   | caffemodel                                                                                               | license      | sha1                                     |
 |:----------------------:|:--------------------------------------------------------------------------------------------------------:|:------------:|:----------------------------------------:|
 | Grocery-CaffeNet model | [caffenet\_train\_iter\_45000.caffemodel](https://drive.google.com/open?id=0B0lt6MbaK2RCZWd0ZklTMmVGbjg) | unrestricted | e43cb843634aae054a2a5bbb813967e0c63b5048 |
+
+GroceryNet at the Edge
+Using the Intel Movidius Neural Compute stick, and an off the shelf Raspberry Pi 3 and Pi Cam we
+have created GroceryNet. Our AI is trained to detect grocery items and able to track the grocery items.
+Intel® MovidiusTM VPUs drive the demanding workloads of GroceryNet at ultra-low power. By
+coupling highly parallel programmable compute with workload-specific hardware acceleration, and co-
+locating these components on a common intelligent memory fabric, Movidius achieves a unique
+balance of power efficiency and high performance for GroceryNet.
+We use Intel Movidius Neural Compute SDK tools for profiling, tuning, and compiling the fine tuned
+CeffeNet deep neural network (DNN) model:
+•
+We used mvNCProfile command line tool to compileGroceryNet for use with the Intel®
+MovidiusTM Neural Compute SDK (Intel® MovidiusTM NCSDK), runs the network on a
+connected neural compute device, and outputs text and HTML profile reports.
+The profiling data contains layer-by-layer statistics about the performance of the
+grocerynetwork. This is helpful in determining how much time is spent on each layer to narrow
+down potential changes to the network to improve the total inference time.
+
+
+<p align="center">
+  <img width="460" height="300" src="https://github.com/TebogoNakampe/GroceryNet/blob/master/model.png">
+</p>
+
+
+Replicate this project:
+
+    cd workspace
+    cd ncsdk
+    cd examples
+    cd caffe
+    git clone git@github.com:TebogoNakampe/GroceryNet.git
+    cd GroceryNet
+
+download caffemodel into this folder
+    make run
+    
+    
+    
 

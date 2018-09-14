@@ -56,6 +56,10 @@ down potential changes to the network to improve the total inference time.
   <img width="460" height="300" src="https://github.com/TebogoNakampe/GroceryNet/blob/master/model.png">
 </p>
 
+Requirements: 
+    1 Intel Movidius NCS
+    Intel Movidius SDK
+    Movidius Appzoo
 
 Replicate this project:
 

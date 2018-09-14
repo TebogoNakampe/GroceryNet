@@ -70,6 +70,8 @@ download caffemodel into this folder
 
     make run
     
-    
+<p align="center">
+  <img width="460" height="300" src="https://github.com/TebogoNakampe/GroceryNet/blob/master/result1.png">
+</p>
     
 
